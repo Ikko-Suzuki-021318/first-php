@@ -46,3 +46,23 @@ for ($i = 1; $i <= 10000; $i++) {
 }
 echo $total;
 echo $result.PHP_EOL;
+
+//$fruits に配列で好きなフルーツを5個代入し、foreach文で順番に出力してください。
+$fruits = array("apple","strawberry","cherry","grape","apricot");
+foreach ($fruits as $fruit) {
+  // code...
+  echo $fruit.PHP_EOL;
+}
+
+/* for文の始めの値を定義する */
+$start = 1;
+/* for文の終わりの値を定義する */
+$end = 100;
+
+for($i = $start; $i <= $end; $i++){
+
+  // 5で割り切れたら{}内を実行する
+  if($i % 5 == 0){
+    echo $i;
+  }
+}
